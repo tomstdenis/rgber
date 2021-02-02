@@ -9,6 +9,5 @@ namespace rgber {
     }
     strip.setPixelColor(i, neopixel.rgb(r, g, b))
 }
-let strip: neopixel.Strip = null
-strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+let strip: neopixel.Strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 }
