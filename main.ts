@@ -1,4 +1,6 @@
-function plot (x: number, y: number, r: number, g: number, b: number) {
+namespace rgber {
+    export function plot (x: number, y: number, r: number, g: number, b: number) {
+    let i = 0
     i = x * 8
     if (x / 2 == 0) {
         i = x + y
@@ -7,6 +9,6 @@ function plot (x: number, y: number, r: number, g: number, b: number) {
     }
     strip.setPixelColor(i, neopixel.rgb(r, g, b))
 }
-let i = 0
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+}
